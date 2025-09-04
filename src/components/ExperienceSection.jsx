@@ -8,7 +8,7 @@ function ExperienceSection() {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/experiences');
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/experiences`);
         // Ordena as experiências da mais recente para a mais antiga
         const sortedExperiences = response.data.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
         setExperiences(sortedExperiences);

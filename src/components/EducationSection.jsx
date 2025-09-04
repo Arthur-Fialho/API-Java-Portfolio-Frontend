@@ -8,7 +8,7 @@ function EducationSection() {
   useEffect(() => {
     const fetchEducations = async () => {
       try {
-        const response = await axios.get('http://localhost:8080/educations');
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/educations`);
         // Ordena as experiências da mais recente para a mais antiga
         const sortedEducations = response.data.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
         setEducations(sortedEducations);

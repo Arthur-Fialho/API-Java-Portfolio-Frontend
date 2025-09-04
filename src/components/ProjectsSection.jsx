@@ -10,7 +10,7 @@ function ProjectsSection() {
     const fetchProjects = async () => {
       try {
         // Faz a requisição GET para a API
-        const response = await axios.get('http://localhost:8080/projects');
+        const response = await axios.get(`${import.meta.env.VITE_API_BASE_URL}/projects`);
         // Atualiza o state 'projects' com os dados recebidos da API
         setProjects(response.data);
       } catch (error) {
