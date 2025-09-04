@@ -3,6 +3,7 @@ function Header() {
     <header className="bg-gray-800 text-white p-4 shadow-md">
       <nav className="container mx-auto flex justify-between items-center">
         <h2 className="text-2xl font-bold">Arthur Fialho</h2>
+        <p className="text-gray-400">Desenvolvedor Web2 / Web3</p>
         <ul className="flex space-x-6">
           <li><a href="#projects" className="hover:text-gray-300 transition-colors">Projetos</a></li>
           <li><a href="#experience" className="hover:text-gray-300 transition-colors">Experiência</a></li>
