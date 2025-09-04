@@ -10,7 +10,20 @@ function ProjectCard({ title, description, technologies, repositoryUrl }) {
           </span>
         ))}
       </div>
-      <a href={repositoryUrl} className="text-teal-300 hover:underline">Ver no GitHub</a>
+      {/* como centralizar esse botao no card */}
+      <div className="flex justify-center">
+        {repositoryUrl && (
+            <a 
+                href={repositoryUrl} 
+                target="_blank"
+                rel="noopener noreferrer"
+              className="github-repo-link"
+              style={{ display: 'inline-block', marginTop: '15px', color: '#2dd4bf', textDecoration: 'underline', fontWeight: 'bold' }}
+          >
+              Ver no GitHub
+          </a>
+      )}
+      </div>
     </div>
   );
 }
