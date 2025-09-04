@@ -33,6 +33,7 @@ function ProjectsSection() {
               description={project.description}
               // O campo 'technologies' na API é uma string, aqui dividimos ela em um array
               technologies={project.technologies ? project.technologies.split(', ') : []}
+              repositoryUrl={project.repositoryUrl}
             />
           ))}
         </div>
