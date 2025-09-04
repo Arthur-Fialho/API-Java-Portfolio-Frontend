@@ -1,4 +1,4 @@
-function ProjectCard({ title, description, technologies }) {
+function ProjectCard({ title, description, technologies, repositoryUrl }) {
   return (
     <div className="bg-gray-800 p-6 rounded-lg shadow-xl hover:bg-gray-700 transition-colors duration-300">     
       <h3 className="text-xl font-bold text-white mb-2">{title}</h3>      
@@ -10,6 +10,7 @@ function ProjectCard({ title, description, technologies }) {
           </span>
         ))}
       </div>
+      <a href={repositoryUrl} className="text-teal-300 hover:underline">Ver no GitHub</a>
     </div>
   );
 }
