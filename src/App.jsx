@@ -13,8 +13,6 @@ function App() {
       <main>
         <HeroSection />
         <ProjectsSection />
-        <EducationSection />
-        <ExperienceSection />
       </main>
 
       <Footer />

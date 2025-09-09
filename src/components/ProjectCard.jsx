@@ -10,7 +10,7 @@ function ProjectCard({ title, description, technologies, repositoryUrl }) {
           </span>
         ))}
       </div>
-      {/* como centralizar esse botao no card */}
+      <div className="flex-grow" />
       <div className="flex justify-center">
         {repositoryUrl && (
             <a 
@@ -18,7 +18,7 @@ function ProjectCard({ title, description, technologies, repositoryUrl }) {
                 target="_blank"
                 rel="noopener noreferrer"
               className="github-repo-link"
-              style={{ display: 'inline-block', marginTop: '15px', color: '#2dd4bf', textDecoration: 'underline', fontWeight: 'bold' }}
+              style={{ display: 'inline-block', marginTop: '15px', color: '#2dd4bf', textDecoration: 'underline', fontWeight: 'bold', transition: 'transform 0.2s' }}
           >
               {repositoryUrl.includes("github") ? "Ver no GitHub" : "Acessar"}
           </a>
