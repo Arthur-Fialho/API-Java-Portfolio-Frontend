@@ -20,7 +20,7 @@ function ProjectCard({ title, description, technologies, repositoryUrl }) {
               className="github-repo-link"
               style={{ display: 'inline-block', marginTop: '15px', color: '#2dd4bf', textDecoration: 'underline', fontWeight: 'bold' }}
           >
-              Ver no GitHub
+              {repositoryUrl.includes("github") ? "Ver no GitHub" : "Acessar"}
           </a>
       )}
       </div>
