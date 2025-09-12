@@ -1,12 +1,16 @@
 import { FaGithub, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 import profileImage from '../assets/profile.png';
 import ThemeSwitcher from './ThemeSwitcher';
+import Clock from './Clock';
 
 function HeroSection() {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="absolute top-6 right-6">
         <ThemeSwitcher />
+      </div>
+      <div className="absolute top-6 left-6">
+        <Clock />
       </div>
       <div className="flex flex-col items-center gap-6">
         <div className="relative w-48 h-48">
