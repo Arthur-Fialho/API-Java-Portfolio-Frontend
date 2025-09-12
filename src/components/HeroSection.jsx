@@ -1,3 +1,5 @@
+import { FaGithub, FaEnvelope } from 'react-icons/fa';
+
 function HeroSection() {
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center text-center px-4">
@@ -12,13 +14,13 @@ function HeroSection() {
           Estudante de Ciências da Computação. Portfólio em construção.
         </p>
         <div className="mt-8">
-          <a href="https://github.com/Arthur-Fialho" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">
-            Meu GitHub
+          <a href="https://github.com/Arthur-Fialho" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline"><FaGithub size={30} />
+            {/* Meu GitHub */}
           </a>
         </div>
         <div className="mt-8">
-          <a href="mailto:arthursouza.fp@gmail.com" className="text-teal-400 hover:underline">
-            Meu Email
+          <a href="mailto:arthursouza.fp@gmail.com" className="text-teal-400 hover:underline"><FaEnvelope size={30} />
+            {/* Meu Email */}
           </a>
         </div>
       </div>
