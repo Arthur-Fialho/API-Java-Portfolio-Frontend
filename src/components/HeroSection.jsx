@@ -9,12 +9,21 @@ function HeroSection() {
         <ThemeSwitcher />
       </div>
       <div className="flex flex-col items-center gap-6">
-        <div className="w-48 h-48 rounded-full ring-4 ring-gray-300 dark:ring-gray-700 ring-offset-8 ring-offset-white dark:ring-offset-gray-900 shadow-xl">
-          <img 
-            src={profileImage} 
-            alt="Foto de Perfil de Arthur Fialho"
-            className="w-full h-full object-cover rounded-full"
-          />
+        <div className="relative w-48 h-48">
+          {/* Ring de luz com brilho pulsante */}
+          <div className="absolute inset-0 rounded-full ring-4 ring-gray-300 dark:ring-gray-700 ring-offset-8 ring-offset-white dark:ring-offset-gray-900 shadow-xl glow-pulse">
+            <img 
+              src={profileImage} 
+              alt="Foto de Perfil de Arthur Fialho"
+              className="w-full h-full object-cover rounded-full relative z-10"
+            />
+          </div>
+          
+          {/* Efeito de partículas girando */}
+          <div className="absolute -inset-2 rounded-full animate-spin" style={{
+            background: 'conic-gradient(from 0deg, transparent 70%, rgba(20, 184, 166, 0.3) 80%, transparent 90%)',
+            animation: 'spin 6s linear infinite'
+          }}></div>
         </div>
 
         <div>
