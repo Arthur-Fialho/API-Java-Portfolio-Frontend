@@ -5,11 +5,11 @@ import Clock from './Clock';
 
 function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="hero" className="relative h-[70vh] flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="absolute top-6 right-6">
         <ThemeSwitcher />
       </div>
-      <div className="absolute top-6 left-6">
+      <div className="absolute top-6 left-6 hidden min-[390px]:block">
         <Clock />
       </div>
       <div className="flex flex-col items-center gap-6">
@@ -52,9 +52,6 @@ function HeroSection() {
           <a href="https://linkedin.com/in/arthurfialho" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors" aria-label="LinkedIn">
             <FaLinkedin size={28} />
           </a>
-        </div>
-        <div className="mt-12 cursor-pointer" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
-          <span className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors animate-bounce text-5xl">↓</span>
         </div>
       </div>
     </section>
