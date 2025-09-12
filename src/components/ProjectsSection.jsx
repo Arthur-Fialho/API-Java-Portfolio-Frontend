@@ -22,9 +22,9 @@ function ProjectsSection() {
   }, []);
 
   return (
-    <section id="projects" className="py-20 px-4">
+    <section id="projects" className="py-20 px-4 bg-white dark:bg-gray-800 transition-colors duration-300">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold text-center mb-12 text-teal-400">Meus Projetos</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-12 text-teal-600 dark:text-teal-400">Meus Projetos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
             <ProjectCard

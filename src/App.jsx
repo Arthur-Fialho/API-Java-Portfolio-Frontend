@@ -1,14 +1,14 @@
-import Header from './components/Header';
+// import Header from './components/Header';
+// import EducationSection from './components/EducationSection';
+// import ExperienceSection from './components/ExperienceSection';
 import Footer from './components/Footer';
 import ProjectsSection from './components/ProjectsSection';
-import EducationSection from './components/EducationSection';
-import ExperienceSection from './components/ExperienceSection';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
 
 function App() {
   return (
-    <div className="bg-gray-900 text-gray-300">
+    <div className="bg-white dark:bg-gray-900 text-gray-800 dark:text-gray-300">
       
       
       <main>
