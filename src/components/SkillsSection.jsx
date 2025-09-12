@@ -1,12 +1,11 @@
 import React from 'react';
 
-// Agora temos uma lista única e simples de todas as suas habilidades.
 const allSkills = [
     "HTML", "CSS", "JavaScript", "TypeScript", "Solidity", "Motoko", 
     "Python", "Java", "Rust", "C#",
     "React", "Spring Boot", ".NET",
     "Foundry", "Git", "Docker", "PostgreSQL",
-    "Blockchain", "Criptoativos",
+    "Blockchain", "Web3",
     "WordPress",
     "Linux", "Windows",
     "AWS"

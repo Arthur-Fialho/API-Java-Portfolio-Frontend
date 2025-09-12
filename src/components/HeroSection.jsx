@@ -13,15 +13,17 @@ function HeroSection() {
         <p className="text-lg text-gray-400 mt-6">
           Estudante de Ciências da Computação. Portfólio em construção.
         </p>
+        {/* colocar os dois icones abaixo dentro da mesma div lado a lado */}
         <div className="mt-8 flex justify-center space-x-4">
           <a href="https://github.com/Arthur-Fialho" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline"><FaGithub size={30} />
             {/* Meu GitHub */}
           </a>
-        </div>
-        <div className="mt-8 flex justify-center space-x-4">
           <a href="mailto:arthursouza.fp@gmail.com" className="text-teal-400 hover:underline"><FaEnvelope size={30} />
             {/* Meu Email */}
           </a>
+        </div>
+        <div className="mt-12">
+          <span className="text-gray-500 animate-bounce">↓</span>
         </div>
       </div>
     </section>
