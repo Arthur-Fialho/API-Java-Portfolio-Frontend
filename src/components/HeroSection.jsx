@@ -43,6 +43,9 @@ function HeroSection() {
         </div>
 
         <div className="flex items-center justify-center gap-6 mt-4">
+          <h2 className="text-md md:text-lg font-medium text-gray-600 dark:text-gray-400 mt-2">
+            Contatos:
+          </h2>
           <a href="mailto:arthursouza.fp@gmail.com" className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors" aria-label="Email">
             <FaEnvelope size={28} />
           </a>
@@ -52,6 +55,21 @@ function HeroSection() {
           <a href="https://linkedin.com/in/arthurfialho" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-teal-500 dark:hover:text-teal-400 transition-colors" aria-label="LinkedIn">
             <FaLinkedin size={28} />
           </a>
+        </div>
+      </div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer group" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
+        <p className="text-lg font-medium text-gray-600 dark:text-gray-400 mb-4 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 hidden min-[380px]:block">
+          Mais sobre meu trabalho
+        </p>
+        <div className="transform group-hover:scale-110 transition-all duration-300">
+          <svg 
+            className="w-12 h-12 text-gray-500 dark:text-gray-400 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 animate-bounce" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7" />
+          </svg>
         </div>
       </div>
     </section>
