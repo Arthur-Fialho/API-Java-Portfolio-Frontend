@@ -20,12 +20,24 @@ function Clock() {
   // Opções para formatar a data e a hora para o padrão local (ex: pt-BR)
   const timeOptions = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
   const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  
+  // Opções para mobile (formato mais compacto)
+  const mobileDateOptions = { day: '2-digit', month: '2-digit', year: 'numeric' };
 
   return (
     <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
       <div className="text-left text-sm font-mono">
-        <p className="text-gray-400 dark:text-gray-500">{date.toLocaleDateString(undefined, dateOptions)}</p>
-        <p className="text-gray-500 dark:text-gray-400">{date.toLocaleTimeString(undefined, timeOptions)}</p>
+        {/* Versão Desktop - formato completo */}
+        <div className="hidden md:block">
+          <p className="text-gray-400 dark:text-gray-500">{date.toLocaleDateString(undefined, dateOptions)}</p>
+          <p className="text-gray-500 dark:text-gray-400">{date.toLocaleTimeString(undefined, timeOptions)}</p>
+        </div>
+        
+        {/* Versão Mobile - formato compacto */}
+        <div className="block md:hidden">
+          <p className="text-gray-400 dark:text-gray-500">{date.toLocaleDateString('pt-BR', mobileDateOptions)}</p>
+          <p className="text-gray-500 dark:text-gray-400">{date.toLocaleTimeString(undefined, timeOptions)}</p>
+        </div>
       </div>
     </div>
   );
