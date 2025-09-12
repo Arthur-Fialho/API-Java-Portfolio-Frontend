@@ -5,7 +5,7 @@ import Clock from './Clock';
 
 function HeroSection() {
   return (
-    <section id="hero" className="relative h-[70vh] flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="hero" className="relative min-h-screen flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="absolute top-6 right-6">
         <ThemeSwitcher />
       </div>
