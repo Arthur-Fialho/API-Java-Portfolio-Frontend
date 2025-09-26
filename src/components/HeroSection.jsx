@@ -12,7 +12,7 @@ function HeroSection() {
       <div className="absolute top-6 left-6 hidden min-[390px]:block">
         <Clock />
       </div>
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-6 pb-24 md:pb-16">
         <div className="relative w-48 h-48">
           {/* Ring de luz com brilho pulsante */}
           <div className="absolute inset-0 rounded-full ring-4 ring-gray-300 dark:ring-gray-700 ring-offset-8 ring-offset-white dark:ring-offset-gray-900 shadow-xl glow-pulse">
@@ -57,13 +57,13 @@ function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer group" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
-        <p className="text-lg font-medium text-gray-600 dark:text-gray-400 mb-4 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 hidden min-[380px]:block">
+      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer group" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
+        <p className="text-base md:text-lg font-medium text-gray-600 dark:text-gray-400 mb-2 md:mb-4 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 hidden min-[380px]:block">
           Mais sobre meu trabalho
         </p>
         <div className="transform group-hover:scale-110 transition-all duration-300">
           <svg 
-            className="w-12 h-12 text-gray-500 dark:text-gray-400 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 animate-bounce" 
+            className="w-10 h-10 md:w-12 md:h-12 text-gray-500 dark:text-gray-400 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 animate-bounce" 
             fill="none" 
             stroke="currentColor" 
             viewBox="0 0 24 24"
