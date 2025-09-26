@@ -4,14 +4,16 @@ import Clock from './Clock';
 
 function HeroSection() {
   return (
-    <section id="hero" className="relative min-h-screen flex items-center justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
+    <section id="hero" className="relative min-h-screen flex flex-col justify-center text-center px-4 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="absolute top-6 right-6">
         <ThemeSwitcher />
       </div>
       <div className="absolute top-6 left-6 hidden min-[390px]:block">
         <Clock />
       </div>
-      <div className="flex flex-col items-center gap-6">
+      
+      {/* Conteúdo principal centralizado */}
+      <div className="flex flex-col items-center gap-6 flex-grow justify-center">
         <div className="relative w-48 h-48">
           {/* Ring de luz com brilho pulsante */}
           <div className="absolute inset-0 rounded-full ring-4 ring-gray-300 dark:ring-gray-700 ring-offset-8 ring-offset-white dark:ring-offset-gray-900 shadow-xl glow-pulse">
@@ -41,7 +43,9 @@ function HeroSection() {
           </h2>
         </div>
       </div>
-      <div className="absolute bottom-4 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer group" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
+      
+      {/* Indicador de scroll no final da seção */}
+      <div className="flex flex-col items-center pb-8 pt-12 cursor-pointer group" onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>
         <p className="text-base md:text-lg font-medium text-gray-600 dark:text-gray-400 mb-2 md:mb-4 group-hover:text-teal-500 dark:group-hover:text-teal-400 transition-all duration-300 hidden min-[380px]:block">
           Conheça meu trabalho
         </p>
