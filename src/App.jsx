@@ -6,6 +6,7 @@ import ProjectsSection from './components/ProjectsSection';
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
 import ContactSection from './components/ContactSection';
+import BooksSection from './components/BooksSection';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <SkillsSection />
         <ProjectsSection />
         <ContactSection />
+        <BooksSection />
       </main>
 
       <Footer />

@@ -7,7 +7,7 @@
 
 > Status: Concluído e implantado na AWS ✅
 
-## 🚀 **[Aceda à versão online aqui!](https://arthurfialho.com.br/)**
+## 🚀 **[Acesse à versão online aqui!](https://arthurfialho.com.br/)**
 
 ![Screenshot do Portfólio](./src/assets/homepage.png)
 
@@ -22,6 +22,29 @@ Este projeto é o front-end desenvolvido para consumir a **[API de Portfólio em
 - **Design Responsivo:** A interface adapta-se perfeitamente a ecrãs de desktop, tablets e telemóveis.
 - **Tema Dinâmico (Dark/Light Mode):** Um seletor de tema que altera a aparência do site e guarda a preferência do utilizador.
 - **Animações em CSS:** Efeitos como um fundo dinâmico e animações de hover que criam uma experiência de utilizador mais rica.
+
+## 📑 Seções do Portfólio
+
+### 🏠 Hero Section
+Apresentação principal com informações pessoais e profissionais.
+
+### 🛠️ Skills Section
+Showcase das habilidades técnicas organizadas por categorias (linguagens, frameworks, ferramentas, etc.).
+
+### 💼 Projects Section
+Galeria de projetos desenvolvidos com descrições, tecnologias utilizadas e links para repositórios.
+
+### 🎓 Education Section *(disponível no projeto, mas não exibida atualmente)*
+Seção para exibir informações sobre formação acadêmica e cursos.
+
+### 💼 Experience Section *(disponível no projeto, mas não exibida atualmente)*
+Seção para mostrar experiência profissional e histórico de trabalho.
+
+### 📞 Contact Section
+Seção para adicionar as infomações de contato.
+
+### 📚 Books Section
+Acompanhamento da jornada de leitura focada em desenvolvimento de software:
 
 ## 🏗️ Arquitetura de Deploy (AWS)
 
@@ -50,7 +73,7 @@ O front-end está implantado utilizando o **AWS Amplify**, configurado para um f
 ### Passos
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/Arthur-Fialho/API-Java-Portfolio-Frontend.git](https://github.com/Arthur-Fialho/API-Java-Portfolio-Frontend.git)
+    git clone https://github.com/Arthur-Fialho/API-Java-Portfolio-Frontend.git
     cd API-Java-Portfolio-Frontend
     ```
 
